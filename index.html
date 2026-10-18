@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="js/signup.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+            <p class="brand-name">Learcon</p>
+            <span>
+                Learn, connect, and explore all that learcon has to offers
+                <p>1000+ Active Users</p>
+            </span>
+        </div>
+        <div class="right-content">
+            <h1>SIGN UP</h1>
+            <span>Get started with an account on <a href="#">Learcon</a></span>
+            <button class="google-btn">
+                <div class="google-btn__content">
+                    <img src="images/google-logo-noBackground.png" alt="google logo">
+                    <p>sign up with google</p>
+                </div>
+            </button>
+            <p>or</p>
+
+            <!-- the form -->
+             <form action="">
+                <input type="email" placeholder="Email" class="input-type" id="email" onchange="validateEmail()">
+                <p id="emailErrorMessage" class="errorMessage"></p>
+
+                <input type="text" placeholder="Password" class="input-type" id="password" onchange="validatePassword()">
+                <p id="passwordErrorMessage" class="errorMessage"></p>
+
+                <input type="text" placeholder="Confirm Password" class="input-type" onchange="confirmPassword()">
+                <p id="passwordConfirm"></p>
+
+                <span class="radio-btn"><input type="radio"> By registering, you agree to our <a href="#">Terms & Conditions</a></span>
+                <button class="register-btn">Register</button>
+             </form>
+             <p>Already have an account? <a href="#">sign-in</a></p>
+        </div>
+    </div>
+</body>
+</html>
