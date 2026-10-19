@@ -143,5 +143,63 @@ body{
 /* responsive design */
 
 @media (max-width: 678px){
+    .container{
+        flex-direction: column;
+    }
 
+    .left-content{
+        /* display: none; */
+        width: 100%;
+        padding: 20px;
+
+
+    }
+    .left-content span{
+        display: none;
+    }
+
+    .right-content{
+        width: 100%;
+    }
+
+    .right-content form{
+        gap: 10px;
+    }
+
+    .radio-btn{
+        width: 60%;
+    }
+}
+
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+
+    .left-content{
+        width: 100%;
+        padding: 20px;
+        height: 25vh;
+
+    }
+    .left-content span{
+        /* display: none; */
+        font-size: 1.5em;
+        width: 75%;
+
+    }
+
+
+
+    .right-content{
+        width: 100%;
+    }
+
+    .right-content form{
+        gap: 10px;
+    }
+
+    .radio-btn{
+        width: 60%;
+    }
 }
